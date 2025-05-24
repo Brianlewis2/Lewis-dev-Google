@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brian Lewis - Programador Web Futurista</title>
+  <meta name="description" content="Brian Lewis, programador web apaixonado por tecnologia, criando soluções inovadoras com HTML, CSS, JavaScript e Python." />
+  <meta name="keywords" content="Brian Lewis, programador web, programador brasileiro, HTML, CSS, JavaScript, Python, desenvolvedor, tecnologia, inovação, futuro, código" />
+  <meta name="author" content="Brian Lewis" />
+  
+  <!-- Open Graph e Twitter Cards -->
+  <meta property="og:title" content="Brian Lewis - Programador Web Futurista" />
+  <meta property="og:description" content="Brian Lewis, programador web apaixonado por tecnologia, criando soluções inovadoras com HTML, CSS, JavaScript e Python." />
+  <meta property="og:image" content="https://i.postimg.cc/d1KnT9rh/20250410-185408.jpg" />
+  <meta property="og:url" content="https://brianlewis.dev" />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" />
+  
+  <!-- Pré-conexão para fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #e0e0e0;
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-shadow: 0 0 6px #00ffff88;
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: 'Orbitron', sans-serif;
+      color: #00fff7;
+      text-shadow: 0 0 10px #00fff7, 0 0 20px #00f7ffbb;
+    }
+    
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+    
+    header p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #66fff7cc;
+    }
+    
+    main.container p {
+      margin-bottom: 18px;
+      font-size: 1.1rem;
+      color: #ccf7ffdd;
+    }
+    
+    strong.highlight {
+      color: #00ffff;
+      font-weight: 700;
+      text-shadow: 0 0 4px #00ffffaa;
+    }
+    
+    em {
+      font-style: italic;
+      color: #80deea;
+    }
+    
+    h2 {
+      color: #00ffff;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      font-size: 1.9rem;
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 6px;
+      font-family: 'Orbitron', sans-serif;
+    }
+    
+    .photo-main {
+      display: block;
+      margin: 20px auto 40px auto;
+      max-width: 320px;
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 0 25px #00ffffaa;
+      transition: transform 0.3s ease;
+    }
+    .photo-main:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px #00ffffee;
+      cursor: pointer;
+    }
+    
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    
+    .photos img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #00ffff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      filter: drop-shadow(0 0 3px #00ffffaa);
+    }
+    
+    .photos img:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      box-shadow: 0 0 20px #00ffffcc;
+    }
+    
+    ul.social-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      padding-left: 0;
+      margin-bottom: 50px;
+    }
+    
+    ul.social-links li a {
+      color: #00ffff;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: color 0.2s ease;
+      font-family: 'Orbitron', sans-serif;
+      text-shadow: 0 0 6px #00ffffbb;
+    }
+    
+    ul.social-links li a:hover {
+      color: #80deea;
+      text-decoration: underline;
+    }
+    
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #66cccccc;
+      padding: 20px 0 10px 0;
+      border-top: 1px solid #005555;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 0 0 3px #00ffff99;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brian Lewis</h1>
+    <p>Programador Web & Desenvolvedor Full Stack</p>
+  </header>
+
+  <main class="container">
+    <img
+      src="https://i.postimg.cc/d1KnT9rh/20250410-185408.jpg"
+      alt="Foto futurista de Brian Lewis programador web"
+      class="photo-main"
+    />
+
+    <section>
+      <h2>Quem eu sou</h2>
+      <p>
+        Nascido na era digital, sempre fui fascinado por códigos e tecnologia. Comecei a programar cedo, explorando HTML, CSS, JavaScript e Python. Minha missão é construir soluções web que conectam pessoas e ideias, sempre olhando para o futuro, inovando e aprendendo. No universo digital, sou <strong class="highlight">Brian Lewis</strong>, o programador que transforma bytes em experiências.
+      </p>
+    </section>
+
+    <section>
+      <h2>Minhas Fotos</h2>
+      <div class="photos">
+        <img
+          src="https://i.postimg.cc/wBBRNwRR/FB-IMG-1747189940812.jpg"
+          alt="Brian Lewis programador full stack em evento de tecnologia"
+        />
+        <img
+          src="https://i.postimg.cc/fyFfqk1Z/FB-IMG-1747189982272.jpg"
+          alt="Brian Lewis em ambiente de trabalho"
+        />
+        <img
+          src="https://i.postimg.cc/Qxgd8vxk/FB-IMG-1747189956561.jpg"
+          alt="Foto de Brian Lewis mostrando projetos"
+        />
+        <img
+          src="https://i.postimg.cc/L5p3chTM/FB-IMG-1746260916392.jpg"
+          alt="Brian Lewis programador trabalhando no computador"
+        />
+      </div>
+    </section>
+
+    <section>
+      <h2>Redes Sociais</h2>
+      <ul class="social-links">
+        <li><a href="https://github.com/Brianlewis2" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.instagram.com/brian_lewis_2" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/share/1HbcN6yZjX/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Brian Lewis • Todos os direitos reservados
+  </footer>
+</body>
+</html>
